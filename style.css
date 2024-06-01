@@ -1,0 +1,90 @@
+/* variable declarations */
+:root {
+  /* Fonts */
+  --default-font-size: 16px;
+
+  font-size: var(--default-font-size);
+  color: #403D39;
+
+
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+  Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #FFFCF2;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Input design */
+input {
+  align-items: center;
+  background-color: #CCC5B9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #403D39;
+  cursor: pointer;
+
+  font-size: var(--default-font-size);
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+input:hover,
+input:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+input:hover {
+  transform: translateY(0.1rem);
+}
+
+input:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+
+form{
+    color: #403D39;
+    text-align: center;
+    padding: 1rem;
+}
+
+label{
+    background-color: #CCC5B9;
+    margin-right: 0.5rem;
+    padding: 0.9rem;
+}
+
+.error{
+    color: red;
+}
